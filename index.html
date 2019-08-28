@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="google-translate-customization" content="3bedbc8a7b114cf5-6f0956cba2f8fe0f-g919b425718ae0e0e-10"></meta>
+	
+	<link rel="image_src" href="https://bot.mercurialminds.com/images/logo.png">
+	<meta property="og:image" content="https://bot.mercurialminds.com/images/logo.png" />
+	<link rel="shortcut icon" href="https://bot.mercurialminds.com/favicon.ico">
+	
+	<link rel="stylesheet" href="https://bot.mercurialminds.com/css/commonstyle.css" type="text/css"> 
+	
+	
+	<link rel="stylesheet" href="https://bot.mercurialminds.com/css/fstyle.css" type="text/css">
+	
+	<script type="text/javascript" src="scripts/sdk.js"></script>
+	
+	<title>Embed on Website - Mercurial Minds</title>
+</head>
+<body style="margin:0;overflow:hidden;">
+<link rel='stylesheet' href='chatlog.css' type='text/css'>
+<link rel='stylesheet' href='blue_round_button.css' type='text/css'>
+<style>
+         img.toolbar {
+         width:32px;
+         height:32px;
+         margin:1px;
+         padding:1px;
+         cursor: pointer;
+         vertical-align:middle;
+         border-style:solid;
+         border-width:1px;
+         border-color:#fff;
+         }
+         img.toolbar:hover {
+         border-color:#eee;
+         }
+         .panel-default{
+         border: 1px solid #008269;
+         border-radius: 0px !important;
+         }
+         .top-bar{
+         background: #008269 !important;
+         color: #ffffff !important;
+         padding: 5px;
+         border-radius: 0px;
+         }
+         #scroller{
+         position: relative;
+         min-height: 500px;
+         overflow: hidden !important;
+         }
+         .chatbox_wrapper{
+         position: absolute;
+         bottom: 0px;
+         left: 0px;
+         background: #ffffff;
+         }
+         #scroller-wrap{
+         background: #ffffff !important;
+         overflow-y: auto;
+         height: 458px;
+         }
+         .btn-send{
+         background: url(images/send_btn.png);
+         background-repeat: no-repeat;
+         width: 40px;
+         height: 40px;
+         background-position: center;
+         border: 0px;
+         outline: none !important;
+         padding-right: 50px;
+         }
+         .chatbox_wrapper .input-group{
+         border-top: 1px solid #9a9a9a;
+         }
+         input.chat_input{
+         height: 40px;
+         border: 0px;
+         outline: none !important;
+         box-shadow: none !important;
+         }
+         .msg_sent{
+         background: #008269;
+         border-radius: 13px 13px 5px 13px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            /*border: 1px solid rgba(0,0,0,.2);*/
+         color: #ffffff;
+         }
+         .msg_receive{
+         background: #ffffff;
+         border-radius: 13px 13px 13px 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            /*border: 1px solid rgba(0,0,0,.2);*/
+         margin-left: 10px;
+            color: #333333;
+         }
+         .msg_sent > time {
+         float: left;
+         }
+         ul.list-inline{
+         margin-bottom: 0px;
+         }
+         ul.list-inline a{
+         border: 0px;
+         }
+         ul.list-inline img{
+         border: 0px;
+         width: 18px;
+         height: 19px;
+         }
+         .panel-title{
+         padding-top: 3px;
+         }
+         .panel-title .fa{
+         color: #ffffff;
+         font-size: 12px;
+         padding-right: 5px;
+         float: left;
+         margin-top: 3px;
+         margin-right: 5px;
+         }
+         .avatar{
+         max-width: 32px;
+         }
+         .avatar img{
+         width: auto !important;
+            position: absolute; bottom: 0;
+            margin-top: 2px;
+         }
+         #minim_chat_window{
+         padding: 0px !important;
+         color: #ffffff;
+         top: -3px;
+         font-weight: normal;
+         }
+         body{    
+         background-image: url("images/bg-img.jpg");
+         background-color: #ffffff;
+		 background-size: 100% 100%;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         background-position: center;
+         }
+		 
+		
+		.style-btn {
+		background-color: #008269;
+		border: 1px solid #008269;
+		margin: 0 0 3px 3px;
+		width: 145px;
+		color: white;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+		}
+}
+      </style>
+<script type='text/javascript' src='scripts/sdk.js'></script>
+<script type='text/javascript'>
+SDK.applicationId = "2924214708098603431";
+var sdk = new SDKConnection();
+var livechat = new WebLiveChatListener();
+livechat.sdk = sdk;
+livechat.instance = "509";
+livechat.instanceName = "Hr staging bot Live Chat";
+livechat.prefix = "botplatformchat";
+livechat.caption = "Chat Now";
+livechat.chatLogType = "log";
+livechat.boxLocation = "bottom-right";
+livechat.color = "#009900";
+livechat.background = "#fff";
+livechat.css = "https://bot.mercurialminds.com/css/chatlog.css";
+livechat.version = 6.0;
+livechat.bubble = false;
+livechat.chatLog = true;
+livechat.promptContactInfo = true;
+livechat.showMenubar = true;
+livechat.showBoxmax = true;
+livechat.showSendImage = true;
+livechat.emailChatLog = true;
+livechat.online = true;
+livechat.linkUsers = false;
+livechat.popupURL = "https://bot.mercurialminds.com/livechat?embedded=true&id=509&chat=true&bubble=false&application=2924214708098603431&loginBanner=false&facebookLogin=false&showLink=false&chatLog=true&menubar=true&sendImage=true&background=%23fff&prompt=You+say&send=Send&css=https://bot.mercurialminds.com/css/chatlog.css";
+livechat.createBox();
+</script>
+
+
+	
+</body>
+</html>
