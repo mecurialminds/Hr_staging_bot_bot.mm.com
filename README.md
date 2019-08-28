@@ -1,2 +1,2 @@
 # HBL HR Chat Bot Demo.
-Click <a target="_blank" href="https://bilalmalik10.github.io/Chat_Bot/HBL_HR/index.html">Here</a> for demo.
+Click <a target="_blank" href="https://mecurialminds.github.io/Hr_staging_bot_bot.mm.com/">Here</a> for demo.
