@@ -2670,6 +2670,9 @@ function WebLiveChatListener() {
 		if (speaker != (this.nick + ':')) {
 			if (this.playChime) {
 				SDK.chime();
+				if(responseText='goodbye')
+				{document.getElementById('botplatformchatchat').disabled=true;
+				}
 			}
 			if (this.speak) {
 				SDK.tts(SDK.stripTags(responseText), this.voice, this.nativeVoice, this.lang, this.nativeVoiceName);
