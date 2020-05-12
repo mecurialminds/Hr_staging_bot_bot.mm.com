@@ -2670,8 +2670,10 @@ function WebLiveChatListener() {
 		if (speaker != (this.nick + ':')) {
 			if (this.playChime) {
 				SDK.chime();
-				if(responseText='goodbye')
-				{document.getElementById('botplatformchatchat').disabled=true;
+				if(responseText=='goodbye')
+				{
+					console.log("goodbye");
+ 					document.getElementById('botplatformchatchat').disabled=true;
 				}
 			}
 			if (this.speak) {
