@@ -2674,6 +2674,8 @@ function WebLiveChatListener() {
 				{
 					console.log("goodbye");
  					document.getElementById('botplatformchatchat').disabled=true;
+					this.minimizeBox();
+					return false;
 				}
 			}
 			if (this.speak) {
