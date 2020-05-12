@@ -2666,6 +2666,7 @@ function WebLiveChatListener() {
 			responseText = message.substring(index + 2, message.length);
 		} else {
 			responseText = message;
+			if(responseText="goodbye"){ document.getElementById('botplatformchatchat').disabled = true;}
 		}
 		if (speaker != (this.nick + ':')) {
 			if (this.playChime) {
