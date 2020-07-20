@@ -5674,9 +5674,10 @@ function LiveChatConnection() {
 		};
 		
 		this.socket.onclose = function () {
-			self.listener.message("Info: Closed");
+			self.listener.message("Info: I have lost connection with the server. Please refresh the page to start over.");
 			self.listener.closed();
 			self.disconnectMedia();
+			document.getElementById('botplatformchatchat').disabled=true;
 		};
 		
 		this.socket.onmessage = function (message) {
