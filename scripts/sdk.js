@@ -2105,6 +2105,7 @@ function WebLiveChatListener() {
 		
 		var self = this;
 		var listen = false;
+		var myTimer=null;
 		if (document.getElementById(this.prefix + "chat") != null) {
 			document.getElementById(this.prefix + "chat").addEventListener("keypress", function(event) {
 				if (event.keyCode == 13) {
