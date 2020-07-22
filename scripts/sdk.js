@@ -2108,13 +2108,14 @@ function WebLiveChatListener() {
 		var myTimerCheck=false;
 		if (document.getElementById(this.prefix + "chat") != null) {
 			document.getElementById(this.prefix + "chat").addEventListener("keypress", function(event) {
+				var connection = new LiveChatConnection();
 				if (event.keyCode == 13) {
 					console.log("1");
 					self.sendMessage();
 					 myTimer = setTimeout(function() {
 						console.log("timer started")
 						document.getElementById('botplatformchatchat').disabled = true;
-						this.onclose();				 
+						connection.socket.disconnect()
 						return false;
 					    }, 10000);
 					myTimerCheck=true;
