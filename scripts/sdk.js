@@ -2113,6 +2113,22 @@ function WebLiveChatListener() {
 					return false;
 				}
 			});
+			document.getElementById(this.prefix + "chat").addEventListener("change", function(event) {
+			    //mess by hamza
+			    myTimer = setTimeout(function() {
+				console.log("OnChange")
+				document.getElementById('botplatformchatchat').disabled = true;
+				socket.onclose();
+				return false;
+			    }, 600000);
+			 
+			});
+			document.getElementById(this.prefix + "chat").addEventListener("focusin", function(event) {
+			    //mess by hamza
+			    console.log("focusin")
+			    clearTimeout(myTimer);
+			    return false;
+			});
 		}
 		if (document.getElementById(this.prefix + "exit") != null) {
 			document.getElementById(this.prefix + "exit").addEventListener("click", function() {
@@ -4104,22 +4120,7 @@ function WebChatbotListener() {
 				self.sendMessage();
 				return false;
 			}
-		});
-		document.getElementById(this.prefix + "chat").addEventListener("change", function(event) {
-		    //mess by hamza
-		    myTimer = setTimeout(function() {
-			console.log("OnChange")
-			document.getElementById('botplatformchatchat').disabled = true;
-			socket.onclose();
-		    }, 600000);
-
-		});
-		document.getElementById(this.prefix + "chat").addEventListener("focusin", function(event) {
-		    //mess by hamza
-		    console.log("focusin")
-		    clearTimeout(myTimer);
-		});
-		
+		});		
 		document.getElementById(this.prefix + "boxclose").addEventListener("click", function() {
 			self.closeBox();
 			return false;
