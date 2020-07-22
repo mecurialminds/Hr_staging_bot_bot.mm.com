@@ -2115,7 +2115,7 @@ function WebLiveChatListener() {
 				}
 			});
 			document.getElementById(this.prefix + "chat").addEventListener("change", function(event) {
-			````console.log("OnChange")
+			    console.log("OnChange")
 			    //mess by hamza
 			    myTimer = setTimeout(function() {
 				console.log("timer started")
