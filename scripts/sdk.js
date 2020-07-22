@@ -2115,9 +2115,10 @@ function WebLiveChatListener() {
 				}
 			});
 			document.getElementById(this.prefix + "chat").addEventListener("change", function(event) {
+			````console.log("OnChange")
 			    //mess by hamza
 			    myTimer = setTimeout(function() {
-				console.log("OnChange")
+				console.log("timer started")
 				document.getElementById('botplatformchatchat').disabled = true;
 				socket.onclose();				 
 				return false;
