@@ -2108,6 +2108,7 @@ function WebLiveChatListener() {
 		if (document.getElementById(this.prefix + "chat") != null) {
 			document.getElementById(this.prefix + "chat").addEventListener("keypress", function(event) {
 				if (event.keyCode == 13) {
+					console.log("1");
 					self.sendMessage();
 					return false;
 				}
@@ -4099,6 +4100,7 @@ function WebChatbotListener() {
 		var self = this;
 		document.getElementById(this.prefix + "chat").addEventListener("keypress", function(event) {
 			if (event.keyCode == 13) {
+				console.log("2");
 				self.sendMessage();
 				return false;
 			}
