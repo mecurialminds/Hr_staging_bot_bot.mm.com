@@ -2115,9 +2115,9 @@ function WebLiveChatListener() {
 					 myTimer = setTimeout(function() {
 						console.log("timer started")
 						document.getElementById('botplatformchatchat').disabled = true;
-						self.message("Info:I have lost connection with the server. Please refresh the page to start over.","");
+						self.message("Info:As I have not heard from you, I am closing this chat.Please feel free to reach out again. Thanks \nPlease refresh the browser to start the chat again.\n Many thanks","");
 						return false;
-					    }, 300000);
+					    }, 10000);
 					myTimerCheck=true;
 					return false;
 				}
