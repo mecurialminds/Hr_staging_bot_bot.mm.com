@@ -2122,7 +2122,7 @@ function WebLiveChatListener() {
 				document.getElementById('botplatformchatchat').disabled = true;
 				socket.onclose();				 
 				return false;
-			    }, 600000);
+			    }, 10000);
 			myTimerCheck=true;
 			 
 			});
