@@ -2111,19 +2111,18 @@ function WebLiveChatListener() {
 				if (event.keyCode == 13) {
 					console.log("1");
 					self.sendMessage();
+					 myTimer = setTimeout(function() {
+						console.log("timer started")
+						document.getElementById('botplatformchatchat').disabled = true;
+						socket.onclose();				 
+						return false;
+					    }, 10000);
+					myTimerCheck=true;
 					return false;
 				}
 			});
 			document.getElementById(this.prefix + "chat").addEventListener("change", function(event) {
-			    console.log("OnChange")
-			    //mess by hamza
-			    myTimer = setTimeout(function() {
-				console.log("timer started")
-				document.getElementById('botplatformchatchat').disabled = true;
-				socket.onclose();				 
-				return false;
-			    }, 10000);
-			myTimerCheck=true;
+	   
 			 
 			});
 			document.getElementById(this.prefix + "chat").addEventListener("focusin", function(event) {
