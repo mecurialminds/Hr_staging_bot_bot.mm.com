@@ -2114,7 +2114,7 @@ function WebLiveChatListener() {
 					 myTimer = setTimeout(function() {
 						console.log("timer started")
 						document.getElementById('botplatformchatchat').disabled = true;
-						socket.close();				 
+						this.onclose();				 
 						return false;
 					    }, 10000);
 					myTimerCheck=true;
