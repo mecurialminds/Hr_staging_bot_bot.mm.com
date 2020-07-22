@@ -2105,7 +2105,7 @@ function WebLiveChatListener() {
 		
 		var self = this;
 		var listen = false;
-		var myTimer=null;
+		var myTimerCheck=false;
 		if (document.getElementById(this.prefix + "chat") != null) {
 			document.getElementById(this.prefix + "chat").addEventListener("keypress", function(event) {
 				if (event.keyCode == 13) {
@@ -2119,15 +2119,19 @@ function WebLiveChatListener() {
 			    myTimer = setTimeout(function() {
 				console.log("OnChange")
 				document.getElementById('botplatformchatchat').disabled = true;
-				socket.onclose();
+				socket.onclose();				 
 				return false;
 			    }, 600000);
+			myTimerCheck=true;
 			 
 			});
 			document.getElementById(this.prefix + "chat").addEventListener("focusin", function(event) {
 			    //mess by hamza
 			    console.log("focusin")
-			    clearTimeout(myTimer);
+				if(myTimerCheck){
+			    	clearTimeout(myTimer);
+				myTimerCheck=false;
+				}
 			    return false;
 			});
 		}
