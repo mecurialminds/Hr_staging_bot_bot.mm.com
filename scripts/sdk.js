@@ -2326,10 +2326,10 @@ function WebLiveChatListener() {
 				chatbot.style.display = 'inline';
 			}
 		}
-		this.exit();
-		setTimeout(function() {
-		    self.exit();
-		}, 100);
+		//this.exit();
+		//setTimeout(function() {
+		//    self.exit();
+		//}, 100);
 		return false;
 	}
 	
