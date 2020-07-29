@@ -2110,6 +2110,11 @@ function WebLiveChatListener() {
 			document.getElementById(this.prefix + "chat").addEventListener("keypress", function(event) {
 				var connection = new LiveChatConnection();
 				if (event.keyCode == 13) {
+					if(myTimerCheck){
+						console.log("clear My Timer Invoked");
+						clearTimeout(myTimer);
+						myTimerCheck=false;
+						}
 					console.log("1");
 					self.sendMessage();
 					 myTimer = setTimeout(function() {
