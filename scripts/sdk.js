@@ -2123,7 +2123,7 @@ function WebLiveChatListener() {
 						self.message("Info: As I have not heard from you, I am closing this chat.Please feel free to reach out again. Thanks.","");
 						self.message("Info: Please refresh the browser to start the chat again. Many thanks","");
 						return false;
-					    }, 300000);
+					    }, 600000);
 					myTimerCheck=true;
 					return false;
 				}
