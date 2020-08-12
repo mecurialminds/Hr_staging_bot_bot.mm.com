@@ -2128,19 +2128,6 @@ function WebLiveChatListener() {
 					return false;
 				}
 			});
-			document.getElementById(this.prefix + "chat").addEventListener("change", function(event) {
-	   
-			 
-			});
-			document.getElementById(this.prefix + "chat").addEventListener("focusin", function(event) {
-			    //mess by hamza
-			    console.log("focusin")
-				if(myTimerCheck){
-			    	clearTimeout(myTimer);
-				myTimerCheck=false;
-				}
-			    return false;
-			});
 		}
 		if (document.getElementById(this.prefix + "exit") != null) {
 			document.getElementById(this.prefix + "exit").addEventListener("click", function() {
