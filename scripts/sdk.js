@@ -2415,11 +2415,11 @@ function WebLiveChatListener() {
 		this.hasContactInfo = true;
 		this.contactName = document.getElementById(this.prefix + "contactname").value;
 		var ok = true;
-		if (this.contactName != null && this.contactName == "") {
+		/*if (this.contactName != null && this.contactName == "") {
 			ok = false;
 			document.getElementById(this.prefix + "contactname").style.borderColor = "red";
 			document.getElementById(this.prefix + "contactname").placeholder = SDK.translate("Enter name");
-		}
+		}*/
 		this.contactEmail = document.getElementById(this.prefix + "contactemail").value;
 		if (this.contactEmail != null && this.contactEmail.indexOf("@") == -1) {
 			ok = false;
